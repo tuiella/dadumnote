@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다듬노트</title>
+<meta name="description" content="논문을 챕터별로 쓰고, 참고문헌·인용·마인드맵·연구 메모를 한곳에서 다듬는 Windows 연구 노트">
+<style>
+  :root { --text:#1d2125; --muted:#5b6168; --line:#e2ded3; --bg:#fdfcf9; --panel:#f4f2ec; --accent:#2a6d61; --accent-soft:#e1eeea; }
+  @media (prefers-color-scheme: dark) { :root { --text:#e7e5e0; --muted:#a0a3a8; --line:#33373a; --bg:#1c1e20; --panel:#232628; --accent:#6fc3b1; --accent-soft:#1f3833; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.75 "Pretendard Variable", Pretendard, "Malgun Gothic", sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 16px 80px; }
+  header h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  header p { margin: 0; font-size: 18px; color: var(--muted); max-width: 60ch; }
+  .note { display:inline-block; margin-top: 18px; padding: 6px 12px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; font-size: 14px; }
+  figure { margin: 36px 0 0; }
+  figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; display: block; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+  h2 { font-size: 20px; margin: 48px 0 12px; }
+  ul.features { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px 24px; }
+  ul.features li { padding: 10px 0; border-top: 1px solid var(--line); }
+  ul.features b { display: block; }
+  ul.features span { color: var(--muted); font-size: 15px; }
+  footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; display: flex; gap: 18px; flex-wrap: wrap; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>다듬노트</h1>
+  <p>논문을 챕터별로 쓰고, 참고문헌·인용·마인드맵·연구 메모를 한곳에서 다듬는 Windows 연구 노트입니다. 모든 내용은 내가 고른 폴더에만 저장됩니다.</p>
+  <span class="note">Microsoft Store 출시 준비 중</span>
+</header>
+
+<figure>
+  <img src="images/manuscript.png" alt="다듬노트 원고 화면: 왼쪽에 챕터 목록, 가운데에 인용과 표시가 있는 본문, 오른쪽에 인용한 참고문헌" width="1600" height="1000">
+  <figcaption>원고와 인용 — 예시 데이터</figcaption>
+</figure>
+
+<h2>할 수 있는 일</h2>
+<ul class="features">
+  <li><b>챕터별 원고</b><span>읽기·편집·Markdown 보기, 자동 저장</span></li>
+  <li><b>참고문헌과 인용</b><span>PDF에서 서지 정보 인식, 문장을 드래그해 인용 연결</span></li>
+  <li><b>임시 인용 · 검토 필요 표시</b><span>근거가 필요한 문장, 다시 볼 문장을 표시해 모아 보기</span></li>
+  <li><b>마인드맵</b><span>독립 블록, 자유로운 연결, Mermaid·LLM 양식으로 열기·내보내기</span></li>
+  <li><b>연구자 탭</b><span>나와 지도교수 정보를 AI 도구의 배경으로 활용</span></li>
+  <li><b>버전 기록과 내보내기</b><span>비교·복원, Markdown·HTML·PDF</span></li>
+</ul>
+
+<figure>
+  <img src="images/mindmap.png" alt="다듬노트 마인드맵 화면: 중심 주제와 가지, 독립 블록, 관계선" width="1600" height="1000" loading="lazy">
+  <figcaption>마인드맵 — 예시 데이터</figcaption>
+</figure>
+
+<footer>
+  <a href="privacy.html">개인정보 처리방침</a>
+  <a href="https://github.com/tuiella/dadumnote/issues">문의</a>
+  <span>© 스튜디오301</span>
+</footer>
+</main>
+</body>
+</html>
